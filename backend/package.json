@@ -1,0 +1,23 @@
+{
+  "name": "simple-node-example",
+  "version": "1.0.0",
+  "description": "Node.js server with JQuery frontend to show data",
+  "author": "matheusmr13",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:matheusmr13/simple-node-example.git"
+  },
+  "dependencies": {
+    "csv-parse": "^1.1.7",
+    "fs": "0.0.2",
+    "mongodb": "^2.2.11",
+    "node-router": "^0.1.5",
+    "promise": "^7.1.1",
+    "util": "^0.10.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.3.4"
+  }
+}
