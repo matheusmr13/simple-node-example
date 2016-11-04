@@ -1,6 +1,7 @@
 var Colorize = {};
 
 Colorize.getColor = function(string) {
+	string = string.toUpperCase();
 	var r = 1,
 		g = 1,
 		b = 1;

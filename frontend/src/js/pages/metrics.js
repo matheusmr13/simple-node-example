@@ -35,7 +35,7 @@ Metrics.initialize = function() {
 	});
 };
 
-var orderDates = function(perDate) {
+Metrics._orderDates = function(perDate) {
 	var dates = Object.keys(perDate);
 	dates.sort(function(a, b) {
 		a = new Date(a);
@@ -55,7 +55,7 @@ var createChart = function(container, metrics) {
 		perDate[metric.date][state] = perDate[metric.date][state] || 0;
 		perDate[metric.date][state] += (metric.metric == 'Revenue' ? 1 : -1) * metric.value; 
 	}
-	dates = orderDates(perDate);
+	dates = Metrics._orderDates(perDate);
 	var lineChartData = getDataToChart(perDate, states);
 	var ctx = document.getElementById("metrics-chart").getContext("2d");
 	new Chart(ctx).Line(lineChartData);

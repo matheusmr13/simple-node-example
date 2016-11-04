@@ -1,1 +1,2 @@
-require('./test/test.js');
+require('./test/ColorizeTest.js');
+require('./test/MetricsTest.js');
