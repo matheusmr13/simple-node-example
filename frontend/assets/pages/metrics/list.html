@@ -1,0 +1,51 @@
+<div class="metrics">
+	<div class="view-type-options">
+		<div class="field">
+			<input name="view" type="radio" id="table-view"/>
+			<label for="table-view">Table view</label>
+		</div>
+		<div class="field">
+			<input name="view" type="radio" id="graph-view"/>
+			<label for="graph-view">Graph view</label>
+		</div>
+	</div>
+	<div class="graph-view view-type">
+		<canvas id="metrics-chart" width="1000" height="500"></canvas>
+		<div class="metrics-labels"></div>
+	</div>
+	<div class="table-view view-type">
+		<div class="filter">
+			<h2>Filter by</h2>
+			<div class="input-field col s12 date-filter">
+				<select>
+				</select>
+				<label>Date</label>
+			</div>
+			<div class="input-field col s12 state-filter">
+				<select>
+				</select>
+				<label>State</label>
+			</div>
+		</div>
+		<table class="striped">
+			<thead>
+				<tr> 
+					<th data-field="date">Date</th>
+					<th data-field="state">State</th>
+					<th data-field="metric">Metric</th>
+					<th data-field="value">Value</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{~it.metrics : metric}}
+					<tr>
+						<td>{{!it.Formatter.formatDate(metric.date)}}</td>
+						<td>{{!metric.state}}</td>
+						<td>{{!metric.metric}}</td>
+						<td>{{!metric.value}}</td>
+					</tr>
+				{{~}}
+			</tbody>
+		</table>
+	</div>
+</div>

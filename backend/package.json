@@ -8,6 +8,10 @@
     "type": "git",
     "url": "git@github.com:matheusmr13/simple-node-example.git"
   },
+  "scripts": {
+    "start": "node Application.js",
+    "test": "mocha"
+  },
   "dependencies": {
     "csv-parse": "^1.1.7",
     "fs": "0.0.2",

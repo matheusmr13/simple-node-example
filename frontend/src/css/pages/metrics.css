@@ -1,0 +1,34 @@
+.metrics .table-view {
+	padding: 0 40px 40px 40px;
+}
+.metrics .graph-view {
+	width: 100%;
+	height: 400px;
+	text-align: center;
+}
+.metrics .view-type-options {
+	padding: 40px;
+}
+
+.metrics .view-type-options label {
+	font-size: 20px;
+}
+
+.metrics .graph-view canvas {
+	vertical-align: top;
+}
+.metrics .graph-view .metrics-labels {
+	display: inline-block;
+}
+.metrics .graph-view .metrics-labels .metrics-label {
+	margin: 10px;
+}
+
+.metrics .metrics-labels .metrics-label {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	color: white;
+	padding: 4px 6px 6px 6px;
+	font-weight: bold;
+}

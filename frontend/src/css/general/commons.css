@@ -1,0 +1,62 @@
+.margin-left-small {
+	margin-left: 5px;
+}
+
+.margin-left-medium {
+	margin-left: 10px !important;
+}
+
+.margin-bottom-big {
+	margin-bottom: 20px !important;
+}
+
+.float-right {
+	float: right;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.text-initial {
+	text-align: initial !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.margin-right-4 {
+	margin-right: 4%;
+}
+
+.grid-48 {
+	width: 48%;
+	float: left;
+}
+
+.clickable {
+	cursor: pointer;
+}
+.grid-33 {
+	width: 33.333333%;
+	float: left;
+}
+.bold {
+	font-weight: bold;
+}
+
+.grid-4 {
+	width: 4%;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.grid-40 {
+	width: 40%;
+}
+
+.grid-20 {
+	width: 20%;
+}
