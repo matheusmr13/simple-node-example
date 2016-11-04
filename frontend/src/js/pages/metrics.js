@@ -125,12 +125,12 @@ var bindButtons = function(container) {
 
 var applyFilter = function(container) {
 	container.find('.table-view.view-type table tbody tr').show().each(function() {
-		if (filter.state && filter.state != $(this).find('td:eq(1)').text()) {
+		if (filter.state && filter.state.length && filter.state.indexOf($(this).find('td:eq(1)').text()) == -1) {
 			$(this).hide();
 			return;
 		}
 
-		if (filter.date && filter.date != $(this).find('td:eq(0)').text()) {
+		if (filter.date && filter.date.length && filter.date.indexOf($(this).find('td:eq(0)').text()) == -1) {
 			$(this).hide();
 			return;
 		}
